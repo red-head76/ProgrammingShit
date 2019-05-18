@@ -1,6 +1,9 @@
 ;; init.el --- Emacs configuration
 ;; INSTALL PACKAGES
 ;; --------------------------------------
+;; Required Packages:
+;; auctex, better-defaults, cmake-ide, company (+ additional), elpy, flycheck, google-c-style,
+;; irony, ivy, material-theme, py-autopep8, smartparens, yasnippet, yasnippet-snippets
 
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (require 'package)
@@ -162,7 +165,7 @@
  '(flycheck-googlelint-verbose "0")
  '(package-selected-packages
    (quote
-    (company-reftex auctex company auto-complete auto-yasnippet ivy ein yasnippet irony 0blayout 2048-game flycheck-irony multiple-cursors yasnippet-snippets smartparens rtags py-autopep8 material-theme jedi google-c-style flycheck elpy doom-themes company-math company-irony-c-headers company-irony company-auctex cmake-mode cmake-ide better-defaults))))
+    (flymake-python-pyflakes company-reftex auctex company auto-complete auto-yasnippet ivy ein yasnippet irony 0blayout 2048-game flycheck-irony multiple-cursors yasnippet-snippets smartparens rtags py-autopep8 material-theme jedi google-c-style flycheck elpy doom-themes company-math company-irony-c-headers company-irony company-auctex cmake-mode cmake-ide better-defaults))))
 (require 'flycheck)
 (eval-after-load 'flycheck
   '(progn
