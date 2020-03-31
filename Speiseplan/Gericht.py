@@ -12,10 +12,10 @@ nein = []
 
 for j in ja_liste:
     ja.append(j[:-1])
-    
+
 for k in nein_liste:
     nein.append(k[:-1])
-    
+
 def kein_bock():
     global i
     if i == 0:
@@ -29,7 +29,7 @@ def kein_bock():
         exit()
     else:
         string = 'Dann halt'
-    
+
     neuer_vorschlag = True
     while neuer_vorschlag:
         gericht = speiseplan[random.randint(0, len(speiseplan)-1)]
